@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/vehicle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            >
+
+            <com.jesusm.holocircleseekbar.lib.HoloCircleSeekBar
+                android:id="@+id/picker"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_toRightOf="@+id/pikerTemp"
+                app:pointer_size="20dp"
+                app:text_size="40sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="RPM"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <com.jesusm.holocircleseekbar.lib.HoloCircleSeekBar
+                        android:id="@+id/pikerRpmLoad"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="left"
+                        app:pointer_size="20dp"
+                        app:text_size="40sp"
+                        />
+
+                    <com.jesusm.holocircleseekbar.lib.HoloCircleSeekBar
+                        android:id="@+id/pikerThrot"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="right"
+                        app:pointer_size="20dp"
+                        app:text_size="40sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Дроссель"
+                        android:id="@+id/textView2"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="30dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Нагрузка на движ"
+                        android:id="@+id/textView5"
+                        android:layout_gravity="left|bottom"
+                        />
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <com.jesusm.holocircleseekbar.lib.HoloCircleSeekBar
+                        android:id="@+id/pikerSpeed"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="left"
+                        app:pointer_size="20dp"
+                        app:text_size="40sp"
+                        />
+
+                    <com.jesusm.holocircleseekbar.lib.HoloCircleSeekBar
+                        android:id="@+id/pikerTemp"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="right"
+                        app:pointer_size="20dp"
+                        app:text_size="40sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Температура "
+                        android:id="@+id/textView3"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginRight="16dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Спидометр"
+                        android:id="@+id/textView4"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="16dp"
+                        />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/MAF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+
+                        android:text="New Text"
+                        />
+
+                    <TextView
+                        android:id="@+id/air_flue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+
+                        android:text="New Text"
+                        />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/runtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="New Text"
+                        />
+
+                    <TextView
+                        android:id="@+id/throttle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+
+                        android:text="New Text"
+                        />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>
